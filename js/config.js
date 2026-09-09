@@ -13,7 +13,7 @@ window.LO_CONFIG = {
      demonstração com produtos de exemplo.
      ---------------------------------------------------------- */
   apiUrl:
-    "https://script.google.com/macros/s/AKfycbzd8zobsorn_ZM5h-D_BvusRC6Myj4uz9m_AJ8stpzecAGOZGzqlSIl24h-Hy-m-VXB/exec",
+    "https://script.google.com/macros/s/AKfycbytzzE0l-0E_7mgsLOW6E830fNhEciAGGqqBnseVGcVwuJYAFbu_N4xxbmV5oOnRHe5/exec",
 
   /* Seu perfil do Instagram (sem o @). Usado nos botões do site. */
   instagram: "@ofertas_localizadas",
