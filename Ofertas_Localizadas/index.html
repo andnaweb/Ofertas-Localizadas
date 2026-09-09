@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Ofertas Localizadas — Achadinhos Selecionados para Você</title>
+  <meta name="description" content="Os melhores achadinhos da Shopee, selecionados diariamente para você economizar. Clique, veja a oferta e compre direto na loja oficial.">
+  <meta name="theme-color" content="#1b1630">
+  <meta property="og:title" content="Ofertas Localizadas — Achadinhos da Shopee">
+  <meta property="og:description" content="Escolha, clique e compre na loja oficial. Ofertas selecionadas todos os dias.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c3aed'/%3E%3Cstop offset='1' stop-color='%23d946ef'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='28' font-weight='bold' fill='white' text-anchor='middle'%3EOL%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <noscript>
+    <div style="padding:20px;text-align:center;font-family:Arial;background:#fff3cd;color:#7a4f01;">
+      Ative o JavaScript para visualizar as ofertas.
+    </div>
+  </noscript>
+
+  <div class="announce" aria-hidden="true">
+    <div class="announce-track">
+      <span>Escolha o produto, clique e pague direto na loja oficial</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span>Ofertas atualizadas todos os dias</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span>Você paga o mesmo preço da loja, sem taxas extras</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span>Escolha o produto, clique e pague direto na loja oficial</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span>Ofertas atualizadas todos os dias</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span>Você paga o mesmo preço da loja, sem taxas extras</span>
+      <span class="dot" aria-hidden="true"></span>
+    </div>
+  </div>
+
+  <div id="demoNotice" class="demo-notice hidden" role="status">
+    <strong>Modo demonstração ativo.</strong> Conecte sua planilha para exibir seus produtos. <a href="README.md" target="_blank" rel="noopener">Ver passo a passo</a>
+  </div>
+
+  <header id="header" class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#inicio" aria-label="Ofertas Localizadas — voltar ao topo">
+        <span class="logo-mark" aria-hidden="true">OL</span>
+        <span class="logo-text">Ofertas<span>Localizadas</span></span>
+      </a>
+      <nav class="header-nav" aria-label="Navegação principal">
+        <a class="header-link" href="#inicio">Início</a>
+        <a class="header-link" href="#como-funciona">Como funciona</a>
+        <a class="header-link" href="#ofertas" data-scroll-target>Ofertas</a>
+        <a class="header-cta" href="#ofertas" data-scroll-target>Ver ofertas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <section class="hero">
+      <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-b" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">Achadinhos selecionados para você</p>
+        <h1 class="hero-title">Ofertas <span class="grad-text">Localizadas</span></h1>
+        <p class="hero-sub">Escolha o produto, clique no link e compre <strong>direto na loja oficial</strong>. Tudo selecionado por categoria, com os melhores preços do dia.</p>
+        <div class="hero-actions">
+          <a href="#ofertas" data-scroll-target class="btn btn-primary">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            Ver ofertas agora
+          </a>
+          <a id="instaHero" href="#" target="_blank" rel="noopener" class="btn btn-ghost">Seguir no Instagram</a>
+        </div>
+
+        <div id="heroStats" class="hero-stats">
+          <div class="stat">
+            <strong id="statProducts">--</strong>
+            <span>ofertas ativas</span>
+          </div>
+          <div class="stat">
+            <strong id="statCategories">--</strong>
+            <span>categorias</span>
+          </div>
+          <div class="stat">
+            <strong id="statOff">--</strong>
+            <span>de desconto</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="how body-section">
+      <div class="container">
+        <h2 class="section-title">Como funciona</h2>
+        <p class="section-sub">Três passos simples até sua compra</p>
+        <div class="how-grid">
+          <div class="how-card">
+            <span class="step-num">1</span>
+            <h3>Navegue e escolha</h3>
+            <p>Explore as ofertas e filtre por categoria ou busque o produto que procura.</p>
+          </div>
+          <div class="how-card">
+            <span class="step-num">2</span>
+            <h3>Clique no link</h3>
+            <p>Você é levado direto para a loja oficial na Shopee, sem passos intermediários.</p>
+          </div>
+          <div class="how-card">
+            <span class="step-num">3</span>
+            <h3>Compre com segurança</h3>
+            <p>Finalize o pedido na loja oficial, com toda a garantia e proteção da plataforma.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ofertas" class="products body-section">
+      <div class="container">
+        <h2 class="section-title">Ofertas do dia</h2>
+        <p class="section-sub">Clique em “Ver produto” e você será direcionado à loja oficial</p>
+
+        <div class="controls">
+          <div class="search-wrap">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+            <input id="searchInput" type="search" placeholder="Buscar produto ou categoria..." autocomplete="off" aria-label="Buscar produtos">
+          </div>
+          <label class="sort-wrap">
+            <span class="sort-label">Ordenar</span>
+            <select id="sortSelect" aria-label="Ordenar produtos">
+              <option value="destaque">Destaques</option>
+              <option value="desconto">Maior desconto</option>
+              <option value="menor">Menor preço</option>
+              <option value="maior">Maior preço</option>
+              <option value="vendas">Mais vendidos</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="categoryNav" class="chips" role="tablist" aria-label="Filtrar por categoria">
+          <button type="button" class="chip active" data-category="todos" role="tab" aria-selected="true">Todos</button>
+        </div>
+
+        <p id="resultCount" class="result-count" aria-live="polite"></p>
+
+        <div id="productGrid" class="grid" aria-live="polite"></div>
+
+        <div id="emptyState" class="empty-state hidden">
+          <p class="empty-title">Nenhum produto encontrado</p>
+          <p>Tente outra busca ou selecione outra categoria.</p>
+        </div>
+
+        <div class="load-more-wrap">
+          <button id="showMore" type="button" class="btn btn-outline hidden">Ver mais produtos</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust body-section">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <div><strong>Compra segura</strong><span>Pague com toda a proteção da loja oficial</span></div>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+          <div><strong>Sem preço extra</strong><span>Você paga exatamente o valor da loja</span></div>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          <div><strong>Atualizado diariamente</strong><span>Novas ofertas entram todos os dias</span></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="logo" href="#inicio" aria-label="Ofertas Localizadas">
+          <span class="logo-mark" aria-hidden="true">OL</span>
+          <span class="logo-text">Ofertas<span>Localizadas</span></span>
+        </a>
+        <p>Os melhores achadinhos, selecionados para você economizar com segurança.</p>
+        <a id="instaFooter" href="#" target="_blank" rel="noopener" class="footer-insta">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          @sua_conta
+        </a>
+      </div>
+
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <span class="footer-title">Navegação</span>
+        <a href="#inicio">Início</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#ofertas">Ofertas</a>
+      </nav>
+
+      <div class="footer-legal">
+        <span class="footer-title">Aviso importante</span>
+        <p>Este site é um portal de indicações (programa de afiliados). Ao clicar nos produtos, você será direcionado à loja oficial para realizar a compra. Este site não vende diretamente e não tem responsabilidade sobre prazos, valores e estoques, que são de responsabilidade da loja vendedora.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; <span id="year"></span> Ofertas Localizadas. Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
