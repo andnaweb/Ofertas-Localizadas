@@ -238,22 +238,25 @@
 
   /* ---------------- Filtros, busca e ordenação ---------------- */
 
-  function applyFilters() {
-    var term = state.search.toLowerCase().trim();
+  function applyFilters(resetShown) {
+  var term = state.search.toLowerCase().trim();
 
-    state.filtered = state.products.filter(function (p) {
-      var okCat = state.category === "todos" || (p.categoria || "Geral") === state.category;
-      if (!okCat) return false;
-      if (!term) return true;
-      var hay = ((p.nome || "") + " " + (p.categoria || "") + " " + (p.badge || "")).toLowerCase();
-      return hay.indexOf(term) !== -1;
-    });
+  state.filtered = state.products.filter(function (p) {
+    var okCat = state.category === "todos" || (p.categoria || "Geral") === state.category;
+    if (!okCat) return false;
+    if (!term) return true;
+    var hay = ((p.nome || "") + " " + (p.categoria || "") + " " + (p.badge || "")).toLowerCase();
+    return hay.indexOf(term) !== -1;
+  });
 
-    sortProducts();
+  sortProducts();
 
+  if (resetShown !== false) {
     shown = PAGE_SIZE;
-    renderResults();
   }
+
+  renderResults();
+}
 
   function sortProducts() {
     var mode = state.sort;
@@ -443,10 +446,9 @@
 
     if (els.showMore) {
       els.showMore.addEventListener("click", function () {
-        shown += PAGE_SIZE;
-        applyFilters();
-      });
-    }
+  shown += PAGE_SIZE;
+  applyFilters(false);
+});
 
     if (els.productGrid) {
       els.productGrid.addEventListener("click", function (e) {
