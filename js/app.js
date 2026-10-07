@@ -445,12 +445,13 @@
     }
 
     if (els.showMore) {
-      els.showMore.addEventListener("click", function () {
-  shown += PAGE_SIZE;
-  applyFilters(false);
-});
+  els.showMore.addEventListener("click", function () {
+    shown += PAGE_SIZE;
+    applyFilters(false);
+  });
+}
 
-    if (els.productGrid) {
+if (els.productGrid) {
       els.productGrid.addEventListener("click", function (e) {
         var btn = e.target.closest ? e.target.closest("[data-link]") : null;
         if (!btn) return;
